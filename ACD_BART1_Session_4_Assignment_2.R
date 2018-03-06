@@ -1,0 +1,24 @@
+##1. x <- c('data.science.in.R', 'machine.learning.in.R')
+#Perform the below string Operation:
+# . Replace the period character "." within each string with another character 
+#i.e. "-" minus sign.
+
+x <- c("data.science.in.R", "machine.learning.in.R")
+x
+y <- gsub( "\\.","-",x)
+y
+
+#We are using \\. because . is a regex meta character and to escape it we need \\
+
+
+
+##2. x <- c('data.science.in.R','machine.learning.in.R')
+#Perform the below String Operation:
+# . Append again with "-" minus sign character at the start of the each string 
+#and finally concatenate all the string within the vector to form 
+# a final single string and assigning it the object.
+
+x <- c("data.science.in.R","machine.learning.in.R")
+
+(y <- paste(paste0("-",x) , collapse = ""))
+
